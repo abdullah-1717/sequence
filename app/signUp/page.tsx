@@ -245,7 +245,7 @@ const LoginPage = () => {
                                 <div style={{ marginRight: "14px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
                                     <Image 
                                         src="/images/password.png" 
-                                        alt="passwordKeyIcon" 
+                                        alt="keyIcon" 
                                         width={100}  
                                         height={100}  
                                         layout="intrinsic" 
@@ -325,7 +325,7 @@ const LoginPage = () => {
                                 <div style={{ marginRight: "14px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
                                     <Image 
                                         src="/images/password.png" 
-                                        alt="passwordKeyIcon" 
+                                        alt="keyIcon" 
                                         width={100}  
                                         height={100}  
                                         layout="intrinsic" 
