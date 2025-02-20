@@ -116,7 +116,7 @@ const LoginPage = () => {
                                 }}>
                                 <div style={{ marginRight: "14px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
                                     <Image 
-                                        src="/company.png" 
+                                        src="/images/company.png" 
                                         alt="companyIcon" 
                                         width={100}  
                                         height={100}  
@@ -176,7 +176,7 @@ const LoginPage = () => {
                                 }}>
                                 <div style={{ marginRight: "14px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
                                     <Image 
-                                        src="/email.png" 
+                                        src="/images/email.png" 
                                         alt="emailIcon" 
                                         width={100}  
                                         height={100}  
@@ -236,7 +236,7 @@ const LoginPage = () => {
                                 }}>
                                 <div style={{ marginRight: "14px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
                                     <Image 
-                                        src="/phone.png" 
+                                        src="/images/phone.png" 
                                         alt="phoneIcon" 
                                         width={100}  
                                         height={100}  

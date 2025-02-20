@@ -123,7 +123,7 @@ const LoginPage = () => {
                                 }}>
                                 <div style={{ marginRight: "14px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
                                     <Image 
-                                        src="/name.png" 
+                                        src="/images/name.png" 
                                         alt="nameIcon" 
                                         width={100}  
                                         height={100}  
@@ -183,7 +183,7 @@ const LoginPage = () => {
                                 }}>
                                 <div style={{ marginRight: "14px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
                                     <Image 
-                                        src="/email.png" 
+                                        src="/images/email.png" 
                                         alt="emailIcon" 
                                         width={100}  
                                         height={100}  
@@ -244,7 +244,7 @@ const LoginPage = () => {
                                 }}>
                                 <div style={{ marginRight: "14px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
                                     <Image 
-                                        src="/password.png" 
+                                        src="/images/password.png" 
                                         alt="passwordKeyIcon" 
                                         width={100}  
                                         height={100}  
@@ -299,7 +299,7 @@ const LoginPage = () => {
                                     {passwordVisible ? (
                                     <div style={{ width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
                                         <Image 
-                                                src="/visible.png" 
+                                                src="/images/visible.png" 
                                                 alt="visibleIcon" 
                                                 width={100}  
                                             height={100}  
@@ -324,7 +324,7 @@ const LoginPage = () => {
                                 }}>
                                 <div style={{ marginRight: "14px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
                                     <Image 
-                                        src="/password.png" 
+                                        src="/images/password.png" 
                                         alt="passwordKeyIcon" 
                                         width={100}  
                                         height={100}  
@@ -379,7 +379,7 @@ const LoginPage = () => {
                                     {confirmPasswordVisible ? (
                                     <div style={{ width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
                                         <Image 
-                                            src="/visible.png" 
+                                            src="/images/visible.png" 
                                             alt="visibleIcon" 
                                             width={100}  
                                             height={100}  
