@@ -154,7 +154,7 @@ const LoginPage = () => {
                                 }}>
                                 <div style={{ marginRight: "14px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
                                 <Image 
-                                src="/images/password.png" 
+                                src="/images/email.png" 
                                 alt="passwordKeyICon" 
                                 width={100}  
                                 height={100}  
