@@ -1,7 +1,9 @@
+"use client";
+import Sidebar from "../ui/sidebar/sidebar";
 
 const Receiveable = () => {
     return (
-        <div>Receiveable</div>
+        <div><Sidebar/></div>
     );
 }
 

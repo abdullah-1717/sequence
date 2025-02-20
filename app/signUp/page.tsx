@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useRouter } from "next/navigation";
 import { Button, Link } from "@mui/material";
-import { Visibility, VisibilityOff } from '@mui/icons-material';
+import { VisibilityOff } from '@mui/icons-material';
 import Image from "next/image";
 
 const LoginPage = () => {
@@ -27,13 +27,13 @@ const LoginPage = () => {
             setPasswordError("Passwords do not match!");
             return;
         } else {
-        router.push("/signIn");
+        router.push("/dashboard");
         }
 };
 
     return (
         <div style={{
-            backgroundImage: "url('/Frame.png')",
+            backgroundImage: "url('/images/Frame.png')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             display: "flex",
@@ -49,16 +49,15 @@ const LoginPage = () => {
                 justifyContent: "center",
                 alignItems: "center",
             }}>
-                <div style={{ marginRight: "8px", width: "27.43px", height: "27.43px" }}>
-                                <Image 
-                                        src="/logo.png" 
-                                        alt="logo" 
-                                        width={100}  
-                                        height={100}  
-                                        layout="intrinsic" 
-                                    />                
-                                    </div>
-                <div style={{ fontSize: "24px", fontWeight: "bold"}}>Sequence</div>
+                <div style={{ marginRight: "8px", width: "142px", height: "27.43px" }}>
+                    <Image 
+                        src="/images/logo.png" 
+                        alt="logo" 
+                        width={100}  
+                        height={100}  
+                        layout="intrinsic" 
+                    />                
+                </div>
             </div>
         <div
             style={{
@@ -122,7 +121,7 @@ const LoginPage = () => {
                                     padding: "18px",
                                     border: `2px solid ${nameFocused ? '#00D47E' : '#E5EBEB'}`,
                                 }}>
-                                <div style={{ marginRight: "8px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
+                                <div style={{ marginRight: "14px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
                                     <Image 
                                         src="/name.png" 
                                         alt="nameIcon" 
@@ -162,7 +161,7 @@ const LoginPage = () => {
                                             top: nameFocused || nameValue ? '-5px' : '25%',
                                             left: '14px',
                                             fontWeight: 500,
-                                            fontSize: '12px',
+                                            fontSize: nameFocused || nameValue ? '10px' : '12px',
                                             color: "#A2ACAC",
                                             transition: '0.2s ease all',
                                             pointerEvents: 'none',
@@ -182,7 +181,7 @@ const LoginPage = () => {
                                     padding: "18px",
                                     border: `2px solid ${emailFocused ? '#00D47E' : '#E5EBEB'}`,
                                 }}>
-                                <div style={{ marginRight: "8px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
+                                <div style={{ marginRight: "14px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
                                     <Image 
                                         src="/email.png" 
                                         alt="emailIcon" 
@@ -223,7 +222,7 @@ const LoginPage = () => {
                                             top: emailFocused || emailValue ? '-5px' : '25%',
                                             left: '14px',
                                             fontWeight: 500,
-                                            fontSize: '12px',
+                                            fontSize: emailFocused || emailValue ? '10px' : '14px',
                                             color: "#A2ACAC",
                                             transition: '0.2s ease all',
                                             pointerEvents: 'none',
@@ -243,10 +242,10 @@ const LoginPage = () => {
                                     padding: "18px",
                                     border: `2px solid ${passwordFocused ? '#00D47E' : '#E5EBEB'}`,
                                 }}>
-                                <div style={{ marginRight: "8px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
+                                <div style={{ marginRight: "14px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
                                     <Image 
                                         src="/password.png" 
-                                        alt="keyIcon" 
+                                        alt="passwordKeyIcon" 
                                         width={100}  
                                         height={100}  
                                         layout="intrinsic" 
@@ -270,7 +269,7 @@ const LoginPage = () => {
                                             fontWeight: 500,
                                             border: 'none',
                                             outline: 'none',
-                                            width: '100%',
+                                            width: '240px',
                                             paddingTop: '10px',
                                             alignItems: 'center',
                                         }} />
@@ -279,10 +278,10 @@ const LoginPage = () => {
                                         style={{
                                             alignItems: "center",
                                             position: 'absolute',
-                                            top: passwordFocused || passwordValue ? '-10px' : '25%',
+                                            top: passwordFocused || passwordValue ? '-5px' : '25%',
                                             left: '14px',
                                             fontWeight: 500,
-                                            fontSize: '12px',
+                                            fontSize: passwordFocused || passwordValue ? '10px' : '12px',
                                             color: "#A2ACAC",
                                             transition: '0.2s ease all',
                                             pointerEvents: 'none',
@@ -298,7 +297,15 @@ const LoginPage = () => {
                                         color: "#9ABDC1",
                                     }}>
                                     {passwordVisible ? (
-                                        <Visibility style={{ width: '18px', height: '18px' }} />
+                                    <div style={{ width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
+                                        <Image 
+                                                src="/visible.png" 
+                                                alt="visibleIcon" 
+                                                width={100}  
+                                            height={100}  
+                                            layout="intrinsic" 
+                                        />                
+                                    </div>
                                     ) : (
                                         <VisibilityOff style={{ width: '18px', height: '18px' }} />
                                     )}
@@ -315,10 +322,10 @@ const LoginPage = () => {
                                     padding: "18px",
                                     border: `2px solid ${confirmPasswordFocused ? '#00D47E' : '#E5EBEB'}`,
                                 }}>
-                                <div style={{ marginRight: "8px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
+                                <div style={{ marginRight: "14px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
                                     <Image 
                                         src="/password.png" 
-                                        alt="keyIcon" 
+                                        alt="passwordKeyIcon" 
                                         width={100}  
                                         height={100}  
                                         layout="intrinsic" 
@@ -342,7 +349,7 @@ const LoginPage = () => {
                                             fontWeight: 500,
                                             border: 'none',
                                             outline: 'none',
-                                            width: '100%',
+                                            width: '240px',
                                             paddingTop: '10px',
                                             alignItems: 'center',
                                         }} />
@@ -351,10 +358,10 @@ const LoginPage = () => {
                                         style={{
                                             alignItems: "center",
                                             position: 'absolute',
-                                            top: confirmPasswordFocused || confirmPasswordValue ? '-10px' : '25%',
+                                            top: confirmPasswordFocused || confirmPasswordValue ? '-5px' : '25%',
                                             left: '14px',
                                             fontWeight: 500,
-                                            fontSize: '12px',
+                                            fontSize: confirmPasswordFocused || confirmPasswordValue ? '10px' : '12px',
                                             color: "#A2ACAC",
                                             transition: '0.2s ease all',
                                             pointerEvents: 'none',
@@ -370,7 +377,15 @@ const LoginPage = () => {
                                         color: "#9ABDC1",
                                     }}>
                                     {confirmPasswordVisible ? (
-                                        <Visibility style={{ width: '18px', height: '18px' }} />
+                                    <div style={{ width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
+                                        <Image 
+                                            src="/visible.png" 
+                                            alt="visibleIcon" 
+                                            width={100}  
+                                            height={100}  
+                                            layout="intrinsic" 
+                                        />                
+                                    </div>
                                     ) : (
                                         <VisibilityOff style={{ width: '18px', height: '18px' }} />
                                     )}

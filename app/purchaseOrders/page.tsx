@@ -1,7 +1,9 @@
+"use client";
+import Sidebar from "../ui/sidebar/sidebar";
 
 const PurchaseOrders = () => {
     return (
-        <div>PurchaseOrders</div>
+        <div><Sidebar/></div>
     );
 }
 

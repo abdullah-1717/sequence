@@ -1,7 +1,9 @@
+"use client";
+import Sidebar from "../ui/sidebar/sidebar";
 
 const BillingInvoice = () => {
     return (
-        <div>BillingInvoice</div>
+       <div> <Sidebar/></div>
     );
 }
 

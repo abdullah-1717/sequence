@@ -26,7 +26,7 @@ const LoginPage = () => {
 
     return (
         <div style={{
-            backgroundImage: "url('/Frame.png')",
+            backgroundImage: "url('/images/Frame.png')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             display: "flex",
@@ -42,16 +42,15 @@ const LoginPage = () => {
                 justifyContent: "center",
                 alignItems: "center",
             }}>
-                <div style={{ marginRight: "8px", width: "27.43px", height: "27.43px" }}>
+                <div style={{ marginRight: "8px", width: "142px", height: "27.43px" }}>
                     <Image 
-                        src="/logo.png" 
+                        src="/images/logo.png" 
                         alt="logo" 
                         width={100}  
                         height={100}  
                         layout="intrinsic" 
                     />                
                 </div>
-                <div style={{ fontSize: "24px", fontWeight: "bold"}}>Sequence</div>
             </div>
         <div
             style={{
@@ -115,7 +114,7 @@ const LoginPage = () => {
                                     padding: "18px",
                                     border: `2px solid ${companyNameFocused ? '#00D47E' : '#E5EBEB'}`,
                                 }}>
-                                <div style={{ marginRight: "8px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
+                                <div style={{ marginRight: "14px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
                                     <Image 
                                         src="/company.png" 
                                         alt="companyIcon" 
@@ -155,7 +154,7 @@ const LoginPage = () => {
                                             top: companyNameFocused || companyNameValue ? '-5px' : '25%',
                                             left: '14px',
                                             fontWeight: 500,
-                                            fontSize: '12px',
+                                            fontSize: companyNameFocused || companyNameValue ? '10px' : '12px',
                                             color: "#A2ACAC",
                                             transition: '0.2s ease all',
                                             pointerEvents: 'none',
@@ -175,7 +174,7 @@ const LoginPage = () => {
                                     padding: "18px",
                                     border: `2px solid ${companyEmailFocused ? '#00D47E' : '#E5EBEB'}`,
                                 }}>
-                                <div style={{ marginRight: "8px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
+                                <div style={{ marginRight: "14px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
                                     <Image 
                                         src="/email.png" 
                                         alt="emailIcon" 
@@ -215,7 +214,7 @@ const LoginPage = () => {
                                             top: companyEmailFocused || companyEmailValue ? '-5px' : '25%',
                                             left: '14px',
                                             fontWeight: 500,
-                                            fontSize: '12px',
+                                            fontSize:companyEmailFocused || companyEmailValue ? '10px' : '12px',
                                             color: "#A2ACAC",
                                             transition: '0.2s ease all',
                                             pointerEvents: 'none',
@@ -235,7 +234,7 @@ const LoginPage = () => {
                                     padding: "18px",
                                     border: `2px solid ${phoneNumberFocused ? '#00D47E' : '#E5EBEB'}`,
                                 }}>
-                                <div style={{ marginRight: "8px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
+                                <div style={{ marginRight: "14px", width: "18px", height: "18px", justifyContent: "center", alignItems: "center" }}>
                                     <Image 
                                         src="/phone.png" 
                                         alt="phoneIcon" 
@@ -275,7 +274,7 @@ const LoginPage = () => {
                                             top: phoneNumberFocused || phoneNumberValue ? '-5px' : '25%',
                                             left: '14px',
                                             fontWeight: 500,
-                                            fontSize: '12px',
+                                            fontSize: phoneNumberFocused || phoneNumberValue ? '10px' : '12px',
                                             color: "#A2ACAC",
                                             transition: '0.2s ease all',
                                             pointerEvents: 'none',

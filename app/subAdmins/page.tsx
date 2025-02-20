@@ -1,10 +1,11 @@
 "use client";
+
 import Sidebar from "../ui/sidebar/sidebar";
 
-const Customers = () => {
+const Admin = () => {
     return (
         <div><Sidebar/></div>
     );
 }
 
-export default Customers;
+export default Admin;
