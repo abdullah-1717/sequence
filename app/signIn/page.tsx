@@ -43,8 +43,7 @@ const LoginPage = () => {
                         src="/images/logo.png" 
                         alt="logo" 
                         width={100}  
-                        height={100}  
-                        layout="intrinsic" 
+                        height={100}
                     />                
                     </div>
             </div>
@@ -102,8 +101,7 @@ const LoginPage = () => {
                                 src="/images/email.png" 
                                 alt="emailICon" 
                                 width={100}  
-                                height={100}  
-                                layout="intrinsic" 
+                                height={100} 
                                  />                
                                 </div>
                                     <div style={{
@@ -157,8 +155,7 @@ const LoginPage = () => {
                                 src="/images/password.png" 
                                 alt="keyIcon" 
                                 width={100}  
-                                height={100}  
-                                layout="intrinsic" 
+                                height={100}
                                     />                
                                 </div>
                                     <div style={{
@@ -178,7 +175,6 @@ const LoginPage = () => {
                                                 fontWeight: 500,
                                                 border: 'none',
                                                 outline: 'none',
-                                                width: '240px',
                                                 paddingTop: '10px',
                                                 alignItems: 'center',
                                             }} />
@@ -208,7 +204,7 @@ const LoginPage = () => {
                                          alt="visibleIcon" 
                                          width={100}  
                                          height={100}  
-                                         layout="intrinsic" 
+                                         layout="responsive" 
                                           />                
                                          </div>   
                                         ) : (

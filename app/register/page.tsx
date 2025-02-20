@@ -47,8 +47,7 @@ const LoginPage = () => {
                         src="/images/logo.png" 
                         alt="logo" 
                         width={100}  
-                        height={100}  
-                        layout="intrinsic" 
+                        height={100} 
                     />                
                 </div>
             </div>
@@ -119,8 +118,7 @@ const LoginPage = () => {
                                         src="/images/company.png" 
                                         alt="companyIcon" 
                                         width={100}  
-                                        height={100}  
-                                        layout="intrinsic" 
+                                        height={100} 
                                      />                
                                 </div>
                                 <div
@@ -179,8 +177,7 @@ const LoginPage = () => {
                                         src="/images/email.png" 
                                         alt="emailIcon" 
                                         width={100}  
-                                        height={100}  
-                                        layout="intrinsic" 
+                                        height={100} 
                                      />                
                                 </div>
                                 <div
@@ -239,8 +236,7 @@ const LoginPage = () => {
                                         src="/images/phone.png" 
                                         alt="phoneIcon" 
                                         width={100}  
-                                        height={100}  
-                                        layout="intrinsic" 
+                                        height={100} 
                                      />                
                                 </div>
                                 <div
