@@ -127,7 +127,7 @@ const Sidebar = () => {
       <Box
         display="flex"
         alignItems="center"
-        height="62.07px"
+        height="61px"
         width="227px"
         paddingBottom="18px"
         paddingTop="18px"
