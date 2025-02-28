@@ -1,6 +1,7 @@
 "use client";
 import Cards from "../ui/dashboard/cards/cards";
 import Charts from "../ui/dashboard/charts/charts";
+import Table from "../ui/dashboard/tables/tables";
 import Navbar from "../ui/navbar/navbar";
 import Sidebar from "../ui/sidebar/sidebar";
 import Image from "next/image";
@@ -37,8 +38,8 @@ const Dashboard = () => {
                             </div>
                         </div>
                         <div><Cards/></div>
-                        <div style={{width: "579px", height: "365px"}}><Charts/></div>
-                        <div>d</div>
+                        <div style={{minWidth: "1173px", width: "100%", height: "365px"}}><Charts/></div>
+                        <div style={{minWidth: "1178px", width: "100%", height: "324px"}}><Table/></div>
                     </div>
                 </div>
             </div>
