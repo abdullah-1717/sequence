@@ -117,6 +117,7 @@ const Sidebar = () => {
         display: "flex",
         flexDirection: "column",
         position: "sticky",
+        minHeight: "978px",
         height: "100vh",
         justifyContent: "space-between",
         width: "227px",

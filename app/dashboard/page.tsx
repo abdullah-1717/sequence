@@ -8,12 +8,12 @@ import Image from "next/image";
 
 const Dashboard = () => {
     return (
-        <div style={{}}>
-            <div style={{ display: "flex", justifyContent: "space-between", width: "100%"}}>
+        <div>
+            <div style={{ display: "flex", justifyContent: "space-between", width: "100%",}}>
                 <div style={{width: "100%", flex: "1"}}><Sidebar/></div>
-                <div style={{width: "100%", }}>
+                <div style={{width: "100%",}}>
                     <Navbar/>
-                    <div style={{ width: "100%", paddingLeft: "20px", paddingTop: "20px", paddingRight: "20px", gap: "15px", display: "flex", flexDirection: "column", minWidth: "1213px"}}>
+                    <div style={{ width: "100%", paddingLeft: "20px", paddingTop: "20px", paddingRight: "20px", gap: "15px", display: "flex", flexDirection: "column",}}>
                         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: "36px"}}>
                             <div style={{height: "26px", maxWidth: "108px", fontSize: "22px", fontWeight: 500, color: "#031B1B", alignItems: "center", justifyContent: "center"}}>Dashboard</div>
                             <div style={{maxWidth: "239", height: "36px", display: "flex", gap: "5px"}}>
@@ -39,7 +39,7 @@ const Dashboard = () => {
                         </div>
                         <div><Cards/></div>
                         <div style={{minWidth: "1173px", width: "100%", height: "365px"}}><Charts/></div>
-                        <div style={{minWidth: "1178px", width: "100%", height: "324px"}}><Table/></div>
+                        <div style={{minWidth: "1178px", width: "100%", height: "324px",}}><Table/></div>
                     </div>
                 </div>
             </div>
